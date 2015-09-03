@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txvMinuto"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txvHora"
+        android:layout_alignBottom="@+id/txvHora"
+        android:layout_toRightOf="@+id/txvHora"
+        android:gravity="center"
+        android:text="@string/lbMinuto" />
+
+    <Button
+        android:id="@+id/btnVoltarIntervalo"
+        style="@style/BotoesCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/btnVoltar" />
+
+    <Button
+        android:id="@+id/btnSalvarIntervalo"
+        style="@style/BotoesConfirm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/btnSalvar" />
+
+    <TextView
+        android:id="@+id/txvIntervalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txvMinuto"
+        android:layout_alignParentLeft="true"
+        android:text="@string/lbIntervalo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerIm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVoltarIntervalo"
+        android:layout_marginTop="84dp"
+        android:layout_toRightOf="@+id/numberPickerIh" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerIh"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/numberPickerIm" />
+
+    <TextView
+        android:id="@+id/txvHora"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberPickerIh"
+        android:layout_toLeftOf="@+id/numberPickerIm"
+        android:gravity="center"
+        android:text="@string/lbHora" />
+
+</RelativeLayout>

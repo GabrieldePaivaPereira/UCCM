@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uccm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.uccm.Principal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name="com.uccm.formulario.Nome"></activity>
+         <activity android:name="com.uccm.formulario.Hora"></activity>
+         <activity android:name="com.uccm.formulario.Quantidade"></activity>
+         <activity android:name="com.uccm.formulario.Intervalo"></activity>
+         <activity android:name="com.uccm.alarme.Alarme"></activity>
+         <activity android:name="com.uccm.alarme.AlarmeNotifica"></activity>
+         <activity android:name="com.uccm.alarme.AgendarAlarme"></activity>
+         <activity android:name="com.uccm.Estoque"></activity>
+         <activity android:name="com.uccm.Editar"></activity>
+         <activity android:name="com.uccm.Sobre"></activity>
+         <receiver android:name="com.uccm.alarme.Receiver">
+             <intent-filter >
+                 <action android:name="Executar_Alarme"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+         </receiver>
+    </application>
+
+</manifest>

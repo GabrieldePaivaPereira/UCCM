@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget32"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<Button
+	android:id="@+id/btnCadastrar"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/btnCadastrar" 
+	style="@style/BotoesConfirm"/>
+
+<Button
+    android:id="@+id/btnEstoque"
+    style="@style/BotoesConfirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/btnCadastrar"
+    android:layout_marginTop="14dp"
+    android:text="@string/btnEstoque" />
+
+<Button
+    android:id="@+id/btnSobre"
+    style="@style/BotoesConfirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/btnEstoque"
+    android:layout_marginTop="14dp"
+    android:text="@string/btnSobre" />
+
+<Button
+    android:id="@+id/btnSair"
+    style="@style/BotoesConfirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/btnSobre"
+    android:layout_marginTop="14dp"
+    android:text="@string/btnSair" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtNome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtQTD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNome1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cbTomei"
+        style="@style/BotoesCancel"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/btnTomei" />
+
+</RelativeLayout>
